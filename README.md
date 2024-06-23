@@ -7,11 +7,11 @@ I choose a 64GB SD card for the rPi5.
 
 ### Start the "Raspberry Pi Imager" and create the image and fill in the following fields:
 
-- Raspberry Pi Modell : RASPBERRY PI 5
+- Raspberry Pi Modell : **RASPBERRY PI 5**
 
--   Betriebssystem (OS) : Other general-porpose OS | Ubuntu | Ubuntu Desktop 24.04 LTS (64bit)
+- Betriebssystem (OS) : **Other general-porpose OS | Ubuntu | Ubuntu Desktop 24.04 LTS (64bit)**
 
--   SD-Karte            : be careful ! The Data of the SD-Card will be lost.
+- SD-Karte            : **be careful ! The Data of the SD-Card will be lost.**
 
 
 
