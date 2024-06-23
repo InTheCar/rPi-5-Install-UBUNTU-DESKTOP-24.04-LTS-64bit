@@ -3,7 +3,7 @@
 You can get the "Raspberry Pi Imager" here:
 https://www.raspberrypi.com/software/
 
-I choose a 64GB SD card for the rPi5.
+I choose a 500 GB SSD for the rPi5. An SSD is faster than a SD-Card
 
 ### Start the "Raspberry Pi Imager" and create the image and fill in the following fields:
 
