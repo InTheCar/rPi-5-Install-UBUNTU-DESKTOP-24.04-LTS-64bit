@@ -51,6 +51,9 @@ If you succeed you will get a window with: **Welcome to Ubuntu Noble Numbat**
 
 **!!! lets go now !!!**
 
-
-
+### Troubleshooting
+#### Firefox doesn't start
+- sudo killall firefox
+- sudo snap refresh
+- sudu shutdown -r now
 
