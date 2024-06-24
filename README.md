@@ -57,3 +57,9 @@ If you succeed you will get a window with: **Welcome to Ubuntu Noble Numbat**
 - sudo snap refresh
 - sudu shutdown -r now
 
+### install additional apps
+#### keepass
+sudo apt install libcanberra-gtk-module
+sudo apt install keepass2
+
+
