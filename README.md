@@ -27,7 +27,7 @@ I choose a 500 GB SSD for the rPi5. An SSD is faster than a SD-Card
 - System Configuration | Welcome: **Select you language (I chooseEnglish)**
 - System Configuration | Keyboard layout: **I used "Detect Keyboard Layout" and ends up with German|German**
 - System Configuration | Wireless: **select "Connect to this network" and then select your WiFi and press Connect. Then type your credentials**
-- System Configuration | Where are you: **My selection was "Germany"**
+- System Configuration | Where are you: **My selection was "Berlin"**
 - System Configuration | Who are you: **fill in the information needed**
 - System Configuration | The rPi will configure the system. **The graphic look terrible**
 
