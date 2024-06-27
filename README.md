@@ -11,7 +11,7 @@ I choose a 500 GB SSD for the rPi5. An SSD is faster than a SD-Card
 
 - Betriebssystem (OS) : **Other general-porpose OS | Ubuntu | Ubuntu Desktop 24.04 LTS (64bit)**
 
-- SD-Karte            : **be careful ! The Data of the SD-Card will be lost.**
+- SSD            : **be careful ! The Data of the SSD will be lost.**
 
 ### Connect your HW to the rPi
 
@@ -44,10 +44,10 @@ If you succeed you will get a window with: **Welcome to Ubuntu Noble Numbat**
 - If needed, perform a restart
 
 ### It's a rPi .... install raspi-config
-- open a terminal
-- execute: "sudo apt-get update"
-- execute: "sudo apt-get install raspi-config"
-
+```
+sudo apt-get update
+sudo apt-get install raspi-config
+```
 
 **!!! lets go now !!!**
 
@@ -55,16 +55,13 @@ If you succeed you will get a window with: **Welcome to Ubuntu Noble Numbat**
 #### Firefox doesn't start
 ```
 sudo killall firefox
-
 sudo snap refresh
-
 sudu shutdown -r now
 ```
 ### install additional apps
 #### keepass
 ```
 sudo apt install libcanberra-gtk-module
-
 sudo apt install keepass2
 ```
 #### net-tools (ifconfig)
