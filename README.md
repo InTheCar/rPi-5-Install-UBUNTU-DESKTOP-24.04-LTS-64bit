@@ -68,6 +68,11 @@ sudo apt install keepass2
 ```
 sudo apt install net-tools
 ```
+#### enable screen sharing
+```
+sudo apt install vino
+```
+
 
 
 
