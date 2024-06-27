@@ -70,6 +70,8 @@ sudo apt install net-tools
 ```
 #### enable screen sharing
 ```
+sudo apt install gnome-remote-desktop 
+
 sudo apt install vino
 sudo vi /etc/gdm3/custom.conf
 ```
