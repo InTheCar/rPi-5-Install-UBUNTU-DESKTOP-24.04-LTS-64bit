@@ -24,10 +24,10 @@ I choose a 500 GB SSD for the rPi5. An SSD is faster than a SD-Card
 ### Basic configuration
 
 - After first boot of the rPi you have to do some configuration
-- System Configuration | Welcome: **Select you language (I chooseEnglish)**
+- System Configuration | Welcome: **Select you language (I choose English)**
 - System Configuration | Keyboard layout: **I used "Detect Keyboard Layout" and ends up with German|German**
 - System Configuration | Wireless: **select "Connect to this network" and then select your WiFi and press Connect. Then type your credentials**
-- System Configuration | Where are you: **My selection was "Germany"**
+- System Configuration | Where are you: **My selection was "Berlin"**
 - System Configuration | Who are you: **fill in the information needed**
 - System Configuration | The rPi will configure the system. **The graphic look terrible**
 
@@ -58,6 +58,11 @@ If you succeed you will get a window with: **Welcome to Ubuntu Noble Numbat**
 - sudu shutdown -r now
 
 ### install additional apps
+#### remote desktop
+in **Settings|System|Remote Desktop**
+- enable Desktop Sharing
+- enable Remote Control
+- change your password, it's by default a random password
 #### keepass
 sudo apt install libcanberra-gtk-module
 sudo apt install keepass2
