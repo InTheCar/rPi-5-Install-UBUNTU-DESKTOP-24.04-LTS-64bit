@@ -58,7 +58,7 @@ sudo killall firefox
 sudo snap refresh
 sudu shutdown -r now
 ```
-### install additional apps
+### install additional apps features
 #### keepass
 ```
 sudo apt install libcanberra-gtk-module
@@ -71,7 +71,15 @@ sudo apt install net-tools
 #### enable screen sharing
 ```
 sudo apt install vino
+sudo vi /etc/gdm3/custom.conf
 ```
+in this configuration remove the # from the following line:
+```
+# WaylandEnable=false
+```
+
+
+
 
 
 
