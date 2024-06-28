@@ -103,6 +103,13 @@ Activate the configuration:
 ```
 sudo netplan apply
 ```
+#### enable SSH
+```
+sudo apt update
+sudo apt install openssh-server
+sudo ufw allow ssh
+```
+
 #### Remote Desktop
 in **Settings|System|Remote Desktop
 - enable "Desktop Sharing"
