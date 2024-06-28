@@ -120,11 +120,8 @@ in **Settings|System|Remote Desktop
 sudo apt install libcanberra-gtk-module
 sudo apt install keepass2
 ```
-#### enable screen sharing
+#### enable touch screen
 ```
-sudo apt install gnome-remote-desktop 
-
-sudo apt install vino
 sudo vi /etc/gdm3/custom.conf
 ```
 in this configuration remove the # from the following line:
