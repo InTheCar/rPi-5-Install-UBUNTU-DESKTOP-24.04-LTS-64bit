@@ -60,17 +60,14 @@ sudu shutdown -r now
 ```
 ### install additional apps features
 #### ethernet configuration
+Create the configuration for the interfaces. In my case I want to have a fixed IP-address for eth0 and usb0 interface.
 
-
-
-
-
-/etc/netplan/99_config.yaml
-
-sudo netplan apply
-
-
-'''
+The usb0 is a NDIS interface. Both interfaces have no gateways.
+```
+sudo vi /etc/netplan/99_config.yaml
+```
+I pasted the following configuration in "/etc/netplan/99_config.yaml"
+```
 network:
   version: 2
   renderer: networkd
@@ -81,6 +78,21 @@ network:
     usb0:
       addresses:
         - 192.168.8.42/24
+
+```
+Activate the configuration:
+```
+sudo netplan apply
+```
+
+
+
+
+
+
+
+
+'''
 
 '''
 #### Remote Desktop
