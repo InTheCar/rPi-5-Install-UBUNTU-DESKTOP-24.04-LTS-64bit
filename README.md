@@ -59,6 +59,32 @@ sudo snap refresh
 sudu shutdown -r now
 ```
 ### install additional apps features
+#### ethernet configuration
+
+
+
+
+
+/etc/netplan/99_config.yaml
+
+sudo netplan apply
+
+
+'''
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    eth0:
+      addresses:
+        - 10.10.10.2/24
+    usb0:
+      addresses:
+        - 192.168.8.42/24
+
+'''
+#### Remote Desktop
+in **Settings|System|
 #### keepass
 ```
 sudo apt install libcanberra-gtk-module
