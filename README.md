@@ -59,6 +59,10 @@ sudo snap refresh
 sudu shutdown -r now
 ```
 ### install additional apps features
+#### net-tools (ifconfig)
+```
+sudo apt install net-tools
+```
 #### ethernet configuration
 Create the configuration for the interfaces. In my case I want to have a fixed IP-address for eth0 and usb0 interface.
 
@@ -79,6 +83,10 @@ network:
       addresses:
         - 192.168.8.42/24
 
+```
+For security change the access:
+```
+sudo chmod 200 /etc/netplan/99_config.yaml
 ```
 Activate the configuration:
 ```
@@ -101,10 +109,6 @@ in **Settings|System|
 ```
 sudo apt install libcanberra-gtk-module
 sudo apt install keepass2
-```
-#### net-tools (ifconfig)
-```
-sudo apt install net-tools
 ```
 #### enable screen sharing
 ```
