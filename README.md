@@ -74,12 +74,14 @@ I pasted the following configuration in "/etc/netplan/99_config.yaml"
 ```
 network:
   version: 2
-  renderer: networkd
+  renderer: NetworkManager
   ethernets:
     eth0:
+      dhcp4: no
       addresses:
-        - 10.10.10.2/24
+        - 192.168.42.42/24
     usb0:
+      dhcp4: no
       addresses:
         - 192.168.8.42/24
 
@@ -88,23 +90,24 @@ For security change the access:
 ```
 sudo chmod 200 /etc/netplan/99_config.yaml
 ```
+before apply the new network plan, shutdown the active interfaces.
+For me it's the wlan0 only:
+```
+sudo ip link set wlan0 down
+```
+Test the new network configuration:
+```
+sudo netplan try
+```
 Activate the configuration:
 ```
 sudo netplan apply
 ```
-
-
-
-
-
-
-
-
-'''
-
-'''
 #### Remote Desktop
-in **Settings|System|
+in **Settings|System|Remote Desktop
+- enable "Desktop Sharing"
+- enable "Remote Control"
+- chang the password if you like
 #### keepass
 ```
 sudo apt install libcanberra-gtk-module
